@@ -60,15 +60,29 @@ To engineer a secure, low-latency health literacy interface utilizing advanced s
 - **Inference Engine:** Groq LPU Hardware Cluster
 - **Large Language Model:** Llama-3.1-8b-Instant
 - **Temperature Configuration:** 0.3 (Optimized to mitigate token hallucination)
+- **Development & Logging Kernel:** Jupyter Notebook (`Task_4_Inference.ipynb`)
+
+### Deliverables & Repository Structure
+- **`Health_Chatbot.py`**: The live frontend Streamlit application source code.
+- **`Task_4_Inference.ipynb`**: Companion development notebook logging prompt validation, guardrail behaviors, and raw API response structures.
 
 ### Safety Guardrails Enforced
 1. **Diagnostic Prohibition:** Systematically suppresses attempts to confirm specific patient pathologies.
 2. **Pharmaceutical Restriction:** Explicitly restricts the calculation or dissemination of drug dosages.
 3. **Emergency Escalation:** Detects acute, life-threatening symptoms and triggers immediate directives to contact local emergency services.
 
-### How to Launch the Interface
+### How to Run and Launch
 
-1. Ensure your localized virtual environment is active:
+#### 1. Running the Academic Notebook
+To view the underlying prompt architecture and integration test results directly within a notebook kernel:
+- Open your workspace in VS Code.
+- Select your virtual environment kernel (`.venv`) and open `Health_Chatbot_Inference.ipynb`.
+- Execute the cells sequentially to observe backend model inference.
+
+#### 2. Launching the Interactive Web Interface
+To spin up the web dashboard, ensure your localized virtual environment is active and follow these steps:
+
+1. Active your environment:
    ```powershell
    .venv\Scripts\Activate.ps1
 

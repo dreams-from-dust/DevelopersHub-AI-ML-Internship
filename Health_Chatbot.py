@@ -5,7 +5,7 @@ from groq import Groq
 # 1. ENTERPRISE CONFIGURATION & THEME RESTRUCTURING
 # ==============================================================================
 st.set_page_config(
-    page_title="MediQuery AI — Clinical Informatics Interface",
+    page_title="MediQuery AI _ Clinical Informatics Interface",
     layout="centered"
 )
 
@@ -97,7 +97,7 @@ OPERATIONAL GUARDRAILS:
 # Initialize clean conversation arrays
 if "messages" not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "Enter your query regarding health concepts or clinical terminology below."}
+        {"role": "assistant", "content": "System initialized. Enter your query regarding health concepts or clinical terminology below."}
     ]
 
 # Render chat interface with standard neutral labels (Native text colors adapt automatically)
