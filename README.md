@@ -41,7 +41,7 @@ To establish strong foundations in Exploratory Data Analysis (EDA) by programmat
 
 1. Clone this repository to your workstation:
    ```bash
-   git clone https://github.com/dreams-from-dust/DevelopersHub-AI-ML-Internship
+   git clone `https://github.com/dreams-from-dust/DevelopersHub-AI-ML-Internship`
    cd DevelopersHub-Internship
 
 2. Activate the localized virtual environment:
