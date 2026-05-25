@@ -60,11 +60,11 @@ To engineer a secure, low-latency health literacy interface utilizing advanced s
 - **Inference Engine:** Groq LPU Hardware Cluster
 - **Large Language Model:** Llama-3.1-8b-Instant
 - **Temperature Configuration:** 0.3 (Optimized to mitigate token hallucination)
-- **Development & Logging Kernel:** Jupyter Notebook (`Task_4_Inference.ipynb`)
+- **Development & Logging Kernel:** Jupyter Notebook (`Health_Chatbot_Inference.ipynb`)
 
 ### Deliverables & Repository Structure
 - **`Health_Chatbot.py`**: The live frontend Streamlit application source code.
-- **`Task_4_Inference.ipynb`**: Companion development notebook logging prompt validation, guardrail behaviors, and raw API response structures.
+- **`Health_Chatbot_Inference.ipynb`**: Companion development notebook logging prompt validation, guardrail behaviors, and raw API response structures.
 
 ### Safety Guardrails Enforced
 1. **Diagnostic Prohibition:** Systematically suppresses attempts to confirm specific patient pathologies.
