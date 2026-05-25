@@ -48,4 +48,34 @@ To establish strong foundations in Exploratory Data Analysis (EDA) by programmat
    ```powershell
    .venv\Scripts\Activate.ps1
 
-3. Open VS Code and execute the notebook `Task_1_Iris_EDA.ipynb` cell-by-cell.
+3. Open VS Code and execute the notebook `Iris_EDA.ipynb` cell-by-cell.
+
+## Task 4: General Health Query Informatics Platform
+
+### Objective
+To engineer a secure, low-latency health literacy interface utilizing advanced system prompt engineering to deliver medical educational insights while systematically enforcing clinical safety guardrails.
+
+### Tech Stack & Environment
+- **Interface Framework:** Streamlit (Theme-adaptive enterprise layout)
+- **Inference Engine:** Groq LPU Hardware Cluster
+- **Large Language Model:** Llama-3.1-8b-Instant
+- **Temperature Configuration:** 0.3 (Optimized to mitigate token hallucination)
+
+### Safety Guardrails Enforced
+1. **Diagnostic Prohibition:** Systematically suppresses attempts to confirm specific patient pathologies.
+2. **Pharmaceutical Restriction:** Explicitly restricts the calculation or dissemination of drug dosages.
+3. **Emergency Escalation:** Detects acute, life-threatening symptoms and triggers immediate directives to contact local emergency services.
+
+### How to Launch the Interface
+
+1. Ensure your localized virtual environment is active:
+   ```powershell
+   .venv\Scripts\Activate.ps1
+
+2. Install the production dependencies:
+   ```bash
+   pip install groq streamlit
+
+3. Execute the Streamlit server command:
+   ```bash
+   streamlit run Health_Chatbot.py
