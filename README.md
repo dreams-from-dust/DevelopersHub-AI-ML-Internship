@@ -41,5 +41,11 @@ To establish strong foundations in Exploratory Data Analysis (EDA) by programmat
 
 1. Clone this repository to your workstation:
    ```bash
-   git clone <your-repository-url>
+   git clone https://github.com/dreams-from-dust/DevelopersHub-AI-ML-Internship
    cd DevelopersHub-Internship
+
+2. Activate the localized virtual environment:
+   ```powershell
+   .venv\Scripts\Activate.ps1
+
+3. Open VS Code and execute the notebook `Task_1_Iris_EDA.ipynb` cell-by-cell.
