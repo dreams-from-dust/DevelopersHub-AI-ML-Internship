@@ -37,26 +37,65 @@ This repository serves as the official submission for the AI/ML Engineering Inte
 
 ---
 
-## Execution Guide
+### How to Run the Notebook Local Environment
 
-### 1. Environment Setup
-To reproduce this project locally, ensure you have Python installed and run the following in your terminal:
-```bash
-python -m venv .venv
-source .venv/bin/activate  # Or .venv\Scripts\Activate.ps1 on Windows
-pip install -r requirements.txt 
-```
+1. Clone this repository to your workstation:
+   ```bash
+   git clone https://github.com/dreams-from-dust/DevelopersHub-AI-ML-Internship
+   cd DevelopersHub-Internship
 
-### 2. Launching Interactive Interfaces
-To launch the application dashboards in your local browser, execute the following commands in your terminal:
+2. Activate the localized virtual environment:
+   ```powershell
+   .venv\Scripts\Activate.ps1
 
-* **House Price Engine:**
-  ```bash
-  streamlit run Task_6_House_Price_Prediction/house_price_app.py
+3. Open VS Code and execute the notebook `Iris_EDA.ipynb` cell-by-cell.
+
+## Task 4: General Health Query Informatics Platform
+
+### Objective
+To engineer a secure, low-latency health literacy interface utilizing advanced system prompt engineering to deliver medical educational insights while systematically enforcing clinical safety guardrails.
+
+### Tech Stack & Environment
+- **Interface Framework:** Streamlit (Theme-adaptive enterprise layout)
+- **Inference Engine:** Groq LPU Hardware Cluster
+- **Large Language Model:** Llama-3.1-8b-Instant
+- **Temperature Configuration:** 0.3 (Optimized to mitigate token hallucination)
+- **Development & Logging Kernel:** Jupyter Notebook (`Task_4_Inference.ipynb`)
+
+### Deliverables & Repository Structure
+- **`Health_Chatbot.py`**: The live frontend Streamlit application source code.
+- **`Task_4_Inference.ipynb`**: Companion development notebook logging prompt validation, guardrail behaviors, and raw API response structures.
+
+### Safety Guardrails Enforced
+1. **Diagnostic Prohibition:** Systematically suppresses attempts to confirm specific patient pathologies.
+2. **Pharmaceutical Restriction:** Explicitly restricts the calculation or dissemination of drug dosages.
+3. **Emergency Escalation:** Detects acute, life-threatening symptoms and triggers immediate directives to contact local emergency services.
+
+### How to Run and Launch
+
+#### 1. Running the Academic Notebook
+To view the underlying prompt architecture and integration test results directly within a notebook kernel:
+- Open your workspace in VS Code.
+- Select your virtual environment kernel (`.venv`) and open `Health_Chatbot_Inference.ipynb`.
+- Execute the cells sequentially to observe backend model inference.
+
+#### 2. Launching the Interactive Web Interface
+To spin up the web dashboard, ensure your localized virtual environment is active and follow these steps:
+
+1. Activate your environment:
+   ```powershell
+   .venv\Scripts\Activate.ps1
+   ```
+
+2. Install the production dependencies:
+   ```bash
+   pip install groq streamlit
+   ```
 
 * **Health Chatbot:**
   ```bash
-streamlit run Task_4_Health_Chatbot/Health_Chatbot.py
+  streamlit run Task_4_Health_Chatbot/Health_Chatbot.py
+  ```
 
 ---
 
