@@ -7,6 +7,8 @@ This repository serves as the official submission for the AI/ML Engineering Inte
 
 ## Project Structure & Task Mapping
 
+This repository includes the internship deliverables for Task 1, Task 4, and Task 6.
+
 | Task | Objective | Dataset | Model/Tool Applied |
 | :--- | :--- | :--- | :--- |
 | **Task 1** | Exploratory Data Analysis | Iris Dataset | `Pandas`, `Seaborn` |
@@ -37,74 +39,90 @@ This repository serves as the official submission for the AI/ML Engineering Inte
 
 ---
 
-### How to Run the Notebook Local Environment
+### How to Run the Internship Tasks
 
 1. Clone this repository to your workstation:
    ```bash
    git clone https://github.com/dreams-from-dust/DevelopersHub-AI-ML-Internship
    cd DevelopersHub-Internship
+   ```
 
 2. Activate the localized virtual environment:
    ```powershell
    .venv\Scripts\Activate.ps1
-
-3. Open VS Code and execute the notebook `Iris_EDA.ipynb` cell-by-cell.
-
-## Task 4: General Health Query Informatics Platform
-
-### Objective
-To engineer a secure, low-latency health literacy interface utilizing advanced system prompt engineering to deliver medical educational insights while systematically enforcing clinical safety guardrails.
-
-### Tech Stack & Environment
-- **Interface Framework:** Streamlit (Theme-adaptive enterprise layout)
-- **Inference Engine:** Groq LPU Hardware Cluster
-- **Large Language Model:** Llama-3.1-8b-Instant
-- **Temperature Configuration:** 0.3 (Optimized to mitigate token hallucination)
-- **Development & Logging Kernel:** Jupyter Notebook (`Task_4_Inference.ipynb`)
-
-### Deliverables & Repository Structure
-- **`Health_Chatbot.py`**: The live frontend Streamlit application source code.
-- **`Task_4_Inference.ipynb`**: Companion development notebook logging prompt validation, guardrail behaviors, and raw API response structures.
-
-### Safety Guardrails Enforced
-1. **Diagnostic Prohibition:** Systematically suppresses attempts to confirm specific patient pathologies.
-2. **Pharmaceutical Restriction:** Explicitly restricts the calculation or dissemination of drug dosages.
-3. **Emergency Escalation:** Detects acute, life-threatening symptoms and triggers immediate directives to contact local emergency services.
-
-### How to Run and Launch
-
-#### 1. Running the Academic Notebook
-To view the underlying prompt architecture and integration test results directly within a notebook kernel:
-- Open your workspace in VS Code.
-- Select your virtual environment kernel (`.venv`) and open `Health_Chatbot_Inference.ipynb`.
-- Execute the cells sequentially to observe backend model inference.
-
-#### 2. Launching the Interactive Web Interface
-To spin up the web dashboard, ensure your localized virtual environment is active and follow these steps:
-
-1. Activate your environment:
-   ```powershell
-   .venv\Scripts\Activate.ps1
    ```
 
-2. Install the production dependencies:
+3. Install the shared dependencies used across the tasks:
    ```bash
-   pip install groq streamlit
+   pip install pandas seaborn numpy scikit-learn plotly streamlit
    ```
 
-* **Health Chatbot:**
+---
+
+## Task 1: Exploratory Data Analysis (Iris Dataset)
+
+- Open `Task1_Iris_EDA/Iris_EDA.ipynb` in VS Code or Jupyter.
+- Select the `.venv` Python kernel.
+- Execute the notebook cells sequentially to walk through data loading, cleaning, visualization, and statistical summarization.
+- The notebook includes plots and analysis for sepal/petal distributions, species separation, and correlation insights.
+
+---
+
+## Task 4: General Health Chatbot
+
+- Open `Task4_Health_Chatbot/Health_Chatbot.py`.
+- Install the required inference dependency if not already installed:
   ```bash
-  streamlit run Task_4_Health_Chatbot/Health_Chatbot.py
+  pip install groq streamlit
   ```
+- Launch the interactive dashboard:
+  ```bash
+  streamlit run Task4_Health_Chatbot/Health_Chatbot.py
+  ```
+- This app demonstrates prompt-engineered safety guardrails, medical education responses, and a secure inference workflow.
+
+---
+
+## Task 6: House Price Prediction
+
+- Open `Task6_House_Price_Prediction/House_Price_Prediction.ipynb` in VS Code or Jupyter to inspect the model training and evaluation pipeline.
+- Alternatively, run the Streamlit interface if you want an interactive valuation demo:
+  ```bash
+  streamlit run Task6_House_Price_Prediction/house_price_app.py
+  ```
+- The task uses a regression model with feature preprocessing, pricing benchmarks, and dual-currency USD/PKR valuation outputs.
 
 ---
 
 ### Methodology
 
+#### Task 1 Methodology: Exploratory Data Analysis
+- Collected and loaded the Iris dataset into a pandas DataFrame.
+- Performed data inspection, summary statistics, and missing-value validation.
+- Visualized feature distributions and species relationships using seaborn and matplotlib.
+- Identified patterns, correlations, and class separation to support analysis conclusions.
 
-This project follows the industry-standard AI/ML engineering pipeline:
+#### Task 4 Methodology: Health Chatbot Engineering
+- Designed system prompt guardrails to enforce safe, non-diagnostic medical responses.
+- Developed a Streamlit interface for interactive user queries and secure backend inference.
+- Integrated a language model via the Groq API for low-latency educational health guidance.
+- Implemented conversational state storage and user-facing disclaimers to maintain transparency.
 
-1. **Data Acquisition:** Sourcing clean, relevant datasets from trusted repositories (e.g., Kaggle, CSV files).
-2. **Preprocessing:** Performing data cleaning, feature engineering, and robust feature scaling to prepare data for model consumption.
-3. **Modeling:** Selection and iterative training of appropriate regression or classification architectures to solve specific problem sets.
-4. **Deployment:** Wrapping finalized models into interactive, production-ready web-based interfaces (Streamlit) for end-user validation and testing.
+#### Task 6 Methodology: House Price Prediction
+- Generated or loaded housing feature data and engineered derived variables such as bed/bath ratio.
+- Applied preprocessing using standard scaling and one-hot encoding for categorical location data.
+- Trained a HistGradientBoostingRegressor pipeline to model pricing behavior.
+- Created an interactive Streamlit app to present valuation estimates and dual-currency analytics.
+
+## Task Coverage & Submission Summary
+
+- **Completed Tasks:** Task 1, Task 4, and Task 6 are fully documented and available in this repository.
+- **Notebook and Code Artifacts:** Each task includes a dedicated notebook or app with step-by-step explanations, dataset preparation, modeling or prompt engineering, and results discussion.
+- **Task 1 Notebook:** `Task1_Iris_EDA/Iris_EDA.ipynb` contains the problem statement, dataset loading, exploratory analysis, visualization, and summary insights.
+- **Task 4 App & Notebook:** `Task4_Health_Chatbot/Health_Chatbot.py` and the companion notebook document the health chatbot design, safety guardrails, and interface workflow.
+- **Task 6 Notebook & Demo:** `Task6_House_Price_Prediction/House_Price_Prediction.ipynb` includes feature engineering, model training, evaluation metrics, and conclusions; `house_price_app.py` demonstrates an interactive valuation interface.
+- **Code Quality and Documentation:** Code is organized for readability, with comments or markdown explanations for each key step and clear task objectives.
+- **Repository Submission:** This README provides a task summary, run instructions, and methodology for the internship deliverables.
+- **Google Classroom Ready:** The repository is ready for submission via Google Classroom with the GitHub URL for review.
+
+---
