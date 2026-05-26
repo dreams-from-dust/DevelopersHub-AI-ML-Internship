@@ -123,6 +123,5 @@ This repository includes the internship deliverables for Task 1, Task 4, and Tas
 - **Task 6 Notebook & Demo:** `Task6_House_Price_Prediction/House_Price_Prediction.ipynb` includes feature engineering, model training, evaluation metrics, and conclusions; `house_price_app.py` demonstrates an interactive valuation interface.
 - **Code Quality and Documentation:** Code is organized for readability, with comments or markdown explanations for each key step and clear task objectives.
 - **Repository Submission:** This README provides a task summary, run instructions, and methodology for the internship deliverables.
-- **Google Classroom Ready:** The repository is ready for submission via Google Classroom with the GitHub URL for review.
 
 ---
